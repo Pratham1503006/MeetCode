@@ -68,7 +68,7 @@ A Chrome extension that provides AI-powered hints for LeetCode problems using Go
 
 ### File Structure
 ```
-leetcode-ai-hint-helper/
+extension/
 ├── manifest.json          # Extension configuration
 ├── popup.html            # Main UI interface
 ├── popup.js              # Popup functionality
@@ -76,7 +76,6 @@ leetcode-ai-hint-helper/
 ├── content.css           # Content script styles
 ├── background.js         # API communication service worker
 ├── icons/                # Extension icons
-└── README.md            # This file
 ```
 
 ### Key Technologies
