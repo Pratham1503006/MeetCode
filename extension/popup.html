@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">💡 LeetCode AI Hints</div>
+      <div class="subtitle">Smart hints without spoilers</div>
+    </div>
+
+    <div class="api-key-section">
+      <div class="input-group">
+        <label for="apiKey">
+          <span class="status-indicator" id="statusIndicator"></span>
+          Gemini API Key
+        </label>
+        <input type="password" id="apiKey" placeholder="Enter your Gemini API key...">
+        <div id="apiKeyMessage"></div>
+      </div>
+      <button class="save-btn" id="saveApiKey">Save API Key</button>
+    </div>
+
+    <div class="hint-section">
+      <div class="problem-info" id="problemInfo" style="display: none;">
+        <div class="problem-title" id="problemTitle">Problem not detected</div>
+        <div id="problemDifficulty"></div>
+      </div>
+
+      <div class="difficulty-buttons">
+        <button class="difficulty-btn easy" id="easyHint">Easy Hint</button>
+        <button class="difficulty-btn medium" id="mediumHint">Medium Hint</button>
+        <button class="difficulty-btn hard" id="hardHint">Hard Hint</button>
+      </div>
+
+      <div class="hint-display">
+        <div class="hint-content" id="hintContent">
+          Select a difficulty level to get an AI-powered hint for the current LeetCode problem.
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      Navigate to a LeetCode problem page to get started
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
